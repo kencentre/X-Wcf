@@ -1,0 +1,351 @@
+BODY {
+            FONT-FAMILY: "微软雅黑";
+            FONT-SIZE: 12px;
+        }
+
+        DIV {
+            FONT-SIZE: 12px;
+        }
+
+        DL {
+            FONT-SIZE: 12px;
+        }
+
+        DT {
+            FONT-SIZE: 12px;
+        }
+
+        DD {
+            FONT-SIZE: 12px;
+        }
+
+        UL {
+            FONT-SIZE: 12px;
+        }
+
+        OL {
+            FONT-SIZE: 12px;
+        }
+
+        LI {
+            FONT-SIZE: 12px;
+        }
+
+        H1 {
+            FONT-SIZE: 12px;
+        }
+
+        H2 {
+            FONT-SIZE: 12px;
+        }
+
+        H3 {
+            FONT-SIZE: 12px;
+        }
+
+        H4 {
+            FONT-SIZE: 12px;
+        }
+
+        H5 {
+            FONT-SIZE: 12px;
+        }
+
+        H6 {
+            FONT-SIZE: 12px;
+        }
+
+        PRE {
+            FONT-SIZE: 12px;
+        }
+
+        CODE {
+            FONT-SIZE: 12px;
+        }
+
+        FORM {
+            FONT-SIZE: 12px;
+        }
+
+        FIELDSET {
+            FONT-SIZE: 12px;
+        }
+
+        LEGEND {
+            FONT-SIZE: 12px;
+        }
+
+        INPUT {
+            FONT-SIZE: 12px;
+        }
+
+        TEXTAREA {
+            FONT-SIZE: 12px;
+        }
+
+        P {
+            FONT-SIZE: 12px;
+        }
+
+        BLOCKQUOTE {
+            FONT-SIZE: 12px;
+        }
+
+        TH {
+            FONT-SIZE: 12px;
+        }
+
+        TD {
+            FONT-SIZE: 12px;
+        }
+
+        SELECT {
+            FONT-SIZE: 12px;
+        }
+
+        BODY {
+            FONT-SIZE: 11px;
+        }
+
+        DIV {
+            FONT-SIZE: 11px;
+        }
+
+        DL {
+            FONT-SIZE: 11px;
+        }
+
+        DT {
+            FONT-SIZE: 11px;
+        }
+
+        DD {
+            FONT-SIZE: 11px;
+        }
+
+        UL {
+            FONT-SIZE: 11px;
+        }
+
+        OL {
+            FONT-SIZE: 11px;
+        }
+
+        LI {
+            FONT-SIZE: 11px;
+        }
+
+        H1 {
+            FONT-SIZE: 11px;
+        }
+
+        H2 {
+            FONT-SIZE: 11px;
+        }
+
+        H3 {
+            FONT-SIZE: 11px;
+        }
+
+        H4 {
+            FONT-SIZE: 11px;
+        }
+
+        H5 {
+            FONT-SIZE: 11px;
+        }
+
+        H6 {
+            FONT-SIZE: 11px;
+        }
+
+        PRE {
+            FONT-SIZE: 11px;
+        }
+
+        CODE {
+            FONT-SIZE: 11px;
+        }
+
+        FORM {
+            FONT-SIZE: 11px;
+        }
+
+        FIELDSET {
+            FONT-SIZE: 11px;
+        }
+
+        LEGEND {
+            FONT-SIZE: 11px;
+        }
+
+        INPUT {
+            FONT-SIZE: 11px;
+        }
+
+        TEXTAREA {
+            FONT-SIZE: 11px;
+        }
+
+        P {
+            FONT-SIZE: 11px;
+        }
+
+        BLOCKQUOTE {
+            FONT-SIZE: 11px;
+        }
+
+        TH {
+            FONT-SIZE: 11px;
+        }
+
+        TD {
+            FONT-SIZE: 11px;
+        }
+
+        SELECT {
+            FONT-SIZE: 11px;
+        }
+
+        .slideDivContinar {
+            PADDING-BOTTOM: 0px;
+            MARGIN: 0px;
+            PADDING-LEFT: 0px;
+            PADDING-RIGHT: 0px;
+            OVERFLOW: hidden;
+            PADDING-TOP: 0px;
+        }
+
+        .slideDiv {
+            PADDING-BOTTOM: 0px;
+            MARGIN: 0px;
+            PADDING-LEFT: 0px;
+            PADDING-RIGHT: 0px;
+            HEIGHT: 100%;
+            TOP: 0px;
+            PADDING-TOP: 0px;
+            LEFT: 0px;
+        }
+
+        .inputforloginbg {
+            BORDER-BOTTOM: medium none;
+            BORDER-LEFT: medium none;
+            WIDTH: 172px;
+            HEIGHT: 21px;
+            BORDER-TOP: medium none;
+            BORDER-RIGHT: medium none;
+        }
+
+            .inputforloginbg INPUT {
+                BORDER-BOTTOM: medium none;
+                BORDER-LEFT: medium none;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                HEIGHT: 15px;
+                BORDER-TOP: medium none;
+                BORDER-RIGHT: medium none;
+            }
+
+        .lgsm {
+            BORDER-BOTTOM: medium none;
+            BORDER-LEFT: medium none;
+            WIDTH: 185px;
+            BACKGROUND: url(../Images/login/submit_bg.png) no-repeat 0px 0px;
+            HEIGHT: 39px;
+            BORDER-TOP: medium none;
+            CURSOR: pointer;
+            BORDER-RIGHT: medium none;
+        }
+
+        .lgsmMouseOver {
+            BORDER-BOTTOM: medium none;
+            BORDER-LEFT: medium none;
+            WIDTH: 185px;
+            BACKGROUND: url(../Images/login/submit_hover_bg.png) no-repeat 0px 0px;
+            HEIGHT: 39px;
+            BORDER-TOP: medium none;
+            CURSOR: pointer;
+            BORDER-RIGHT: medium none;
+        }
+
+        .crossNav {
+            POSITION: absolute;
+            MARGIN-TOP: 105px;
+            PADDING-LEFT: 30px;
+            WIDTH: 100%;
+            PADDING-RIGHT: 30px;
+            HEIGHT: 30px;
+        }
+
+        A {
+            COLOR: #123885;
+        }
+
+        .langitemhover {
+            WIDTH: 121px;
+            BACKGROUND: #bbb6b6;
+            HEIGHT: 20px;
+            CURSOR: pointer;
+        }
+
+        .langitem {
+            WIDTH: 121px;
+            HEIGHT: 20px;
+        }
+
+        #langDiv {
+            Z-INDEX: 9999999;
+            BORDER-BOTTOM: #999 1px solid;
+            POSITION: absolute;
+            BORDER-LEFT: #999 1px solid;
+            WIDTH: 121px;
+            DISPLAY: none;
+            BACKGROUND: #ebeeef;
+            BORDER-TOP: #999 1px solid;
+            BORDER-RIGHT: #999 1px solid;
+        }
+
+        .inputtd {
+            Z-INDEX: 12;
+            PADDING-BOTTOM: 4px;
+            PADDING-LEFT: 0px;
+            PADDING-RIGHT: 0px;
+            FONT-FAMILY: "微软雅黑";
+            BACKGROUND: url(../Images/login/text1.png) no-repeat;
+            FONT-SIZE: 11px;
+            PADDING-TOP: 2px;
+        }
+
+        .labdiv {
+            Z-INDEX: 12;
+            MARGIN: 0px 2px 0px 5px;
+            FLOAT: left;
+        }
+
+        .errorDiv {
+            BORDER-BOTTOM: #f00 1px solid;
+            POSITION: absolute;
+            BORDER-LEFT: #f00 1px solid;
+            WIDTH: 190px;
+            HEIGHT: 33px;
+            BORDER-TOP: #f00 1px solid;
+            BORDER-RIGHT: #f00 1px solid;
+            PADDING-TOP: 6px;
+        }
+
+        #errorMessage {
+            TEXT-ALIGN: left;
+            WIDTH: 100%;
+            COLOR: red;
+        }
+
+        .baseinput {
+            border-style: none;
+            border-color: inherit;
+            border-width: medium;
+            MARGIN-TOP: -2px;
+            BACKGROUND: none transparent scroll repeat 0% 0%;
+            border:0px none;
+            width:124px;
+            height:18px;
+            font-size:12pt;
+            }

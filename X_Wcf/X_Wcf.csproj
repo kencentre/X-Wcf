@@ -1,0 +1,1325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{00638EAD-4D09-47E4-BA66-731B8AD72552}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>X_Wcf</RootNamespace>
+    <AssemblyName>X_Wcf</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode>true</IISExpressUseClassicPipelineMode>
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FineUI, Version=6.0.3.0, Culture=neutral, PublicKeyToken=0ff1835d01c384a9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\FineUI\FineUI.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\lib\HtmlAgilityPack\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\lib\Newtonsoft.Json\Net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administrator\BasePage.aspx" />
+    <Content Include="Administrator\BasePlatform\Account\Add.aspx" />
+    <Content Include="Administrator\BasePlatform\Account\ChangeUserInfo.aspx" />
+    <Content Include="Administrator\BasePlatform\Account\Default.aspx" />
+    <Content Include="Administrator\BasePlatform\Account\Modify.aspx" />
+    <Content Include="Administrator\BasePlatform\Account\UpdatePassword.aspx" />
+    <Content Include="Administrator\BasePlatform\Dept\Add.aspx" />
+    <Content Include="Administrator\BasePlatform\Dept\Delete.aspx" />
+    <Content Include="Administrator\BasePlatform\Dept\Default.aspx" />
+    <Content Include="Administrator\BasePlatform\Dept\Modify.aspx" />
+    <Content Include="Administrator\BasePlatform\Desk\Add.aspx" />
+    <Content Include="Administrator\BasePlatform\Desk\Config.aspx" />
+    <Content Include="Administrator\BasePlatform\Desk\Default.aspx" />
+    <Content Include="Administrator\BasePlatform\Desk\Modify.aspx" />
+    <Content Include="Administrator\BasePlatform\Dictionary\Add.aspx" />
+    <Content Include="Administrator\BasePlatform\Dictionary\Default.aspx" />
+    <Content Include="Administrator\BasePlatform\Dictionary\Delete.aspx" />
+    <Content Include="Administrator\BasePlatform\Dictionary\Modify.aspx" />
+    <Content Include="Administrator\BasePlatform\Duty\Add.aspx" />
+    <Content Include="Administrator\BasePlatform\Duty\Config.aspx" />
+    <Content Include="Administrator\BasePlatform\Duty\Default.aspx" />
+    <Content Include="Administrator\BasePlatform\Duty\Modify.aspx" />
+    <Content Include="Administrator\BasePlatform\Main\Add.aspx" />
+    <Content Include="Administrator\BasePlatform\Main\Default.aspx" />
+    <Content Include="Administrator\BasePlatform\Main\Delete.aspx" />
+    <Content Include="Administrator\BasePlatform\Main\Modify.aspx" />
+    <Content Include="Administrator\BasePlatform\Notice\Add.aspx" />
+    <Content Include="Administrator\BasePlatform\Notice\Default.aspx" />
+    <Content Include="Administrator\BasePlatform\Notice\Modify.aspx" />
+    <Content Include="Administrator\BasePlatform\Notice\SearchList.aspx" />
+    <Content Include="Administrator\BasePlatform\Notice\Show.aspx" />
+    <Content Include="Administrator\BasePlatform\Role\Add.aspx" />
+    <Content Include="Administrator\BasePlatform\Role\Config.aspx" />
+    <Content Include="Administrator\BasePlatform\Role\Default.aspx" />
+    <Content Include="Administrator\BasePlatform\Role\Modify.aspx" />
+    <Content Include="Administrator\CMSPlatform\About\Add.aspx" />
+    <Content Include="Administrator\CMSPlatform\About\Default.aspx" />
+    <Content Include="Administrator\CMSPlatform\About\Modify.aspx" />
+    <Content Include="Administrator\CMSPlatform\Code\Add.aspx" />
+    <Content Include="Administrator\CMSPlatform\Code\Default.aspx" />
+    <Content Include="Administrator\CMSPlatform\Code\Modify.aspx" />
+    <Content Include="Administrator\CMSPlatform\Link\Add.aspx" />
+    <Content Include="Administrator\CMSPlatform\Link\Default.aspx" />
+    <Content Include="Administrator\CMSPlatform\Link\Modify.aspx" />
+    <Content Include="Administrator\CMSPlatform\NewsChannel\Add.aspx" />
+    <Content Include="Administrator\CMSPlatform\NewsChannel\Default.aspx" />
+    <Content Include="Administrator\CMSPlatform\NewsChannel\Delete.aspx" />
+    <Content Include="Administrator\CMSPlatform\NewsChannel\Modify.aspx" />
+    <Content Include="Administrator\CMSPlatform\News\Add.aspx" />
+    <Content Include="Administrator\CMSPlatform\News\Default.aspx" />
+    <Content Include="Administrator\CMSPlatform\News\Modify.aspx" />
+    <Content Include="Administrator\Default.aspx" />
+    <Content Include="Administrator\Res\Css\login.css" />
+    <Content Include="Administrator\Res\Images\Error.jpg" />
+    <Content Include="Administrator\Res\Images\Main.jpg" />
+    <Content Include="Administrator\Login.aspx" />
+    <Content Include="Administrator\Res\Javascript\jquery.cycle.all.js" />
+    <Content Include="Administrator\Res\Javascript\jquery.js" />
+    <Content Include="Administrator\RunStatus\404.html" />
+    <Content Include="Administrator\RunStatus\500.html" />
+    <Content Include="Administrator\SchoolPlatform\Brand\Add.aspx" />
+    <Content Include="Administrator\SchoolPlatform\Brand\Default.aspx" />
+    <Content Include="Administrator\SchoolPlatform\Brand\Modify.aspx" />
+    <Content Include="Administrator\SchoolPlatform\Class\Add.aspx" />
+    <Content Include="Administrator\SchoolPlatform\Class\Default.aspx" />
+    <Content Include="Administrator\SchoolPlatform\Class\Modify.aspx" />
+    <Content Include="Administrator\SchoolPlatform\School\Add.aspx" />
+    <Content Include="Administrator\SchoolPlatform\School\Default.aspx" />
+    <Content Include="Administrator\SchoolPlatform\School\Modify.aspx" />
+    <Content Include="Administrator\SchoolPlatform\Signup\Add.aspx" />
+    <Content Include="Administrator\SchoolPlatform\Signup\Default.aspx" />
+    <Content Include="Administrator\SchoolPlatform\Signup\Modify.aspx" />
+    <Content Include="Administrator\SchoolPlatform\Student\Add.aspx" />
+    <Content Include="Administrator\SchoolPlatform\Student\Default.aspx" />
+    <Content Include="Administrator\SchoolPlatform\Student\Modify.aspx" />
+    <Content Include="Administrator\SchoolPlatform\Teacher\Add.aspx" />
+    <Content Include="Administrator\SchoolPlatform\Teacher\Default.aspx" />
+    <Content Include="Administrator\SchoolPlatform\Teacher\Modify.aspx" />
+    <Content Include="Administrator\Tools\BrockChoose.aspx" />
+    <Content Include="Administrator\Tools\ChooseChannel.aspx" />
+    <Content Include="Administrator\Tools\ConfigTable.aspx" />
+    <Content Include="Administrator\Tools\DeptChoose.aspx" />
+    <Content Include="Administrator\Tools\DictionaryChoose.aspx" />
+    <Content Include="Administrator\Tools\IconChoose.aspx" />
+    <Content Include="Administrator\Tools\Loading.aspx" />
+    <Content Include="Administrator\Tools\MainChoose.aspx" />
+    <Content Include="Administrator\Tools\NewsChannelChoose.aspx" />
+    <Content Include="Administrator\Tools\TemplateChoose.aspx" />
+    <Content Include="Administrator\Tools\WebSiteChoose.aspx" />
+    <Content Include="Administrator\UserDesk\Default.aspx" />
+    <Content Include="Administrator\UserDesk\Notice.aspx" />
+    <Content Include="Administrator\UserDesk\Weather.html" />
+    <Content Include="Administrator\UserDesk\Welcome.aspx" />
+    <Content Include="Administrator\WebSitePlatform\Brock\Add.aspx" />
+    <Content Include="Administrator\WebSitePlatform\Brock\Default.aspx" />
+    <Content Include="Administrator\WebSitePlatform\Brock\Modify.aspx" />
+    <Content Include="Administrator\WebSitePlatform\Property\Add.aspx" />
+    <Content Include="Administrator\WebSitePlatform\Property\Default.aspx" />
+    <Content Include="Administrator\WebSitePlatform\Property\Modify.aspx" />
+    <Content Include="Administrator\WebSitePlatform\Tag\Add.aspx" />
+    <Content Include="Administrator\WebSitePlatform\Tag\Config.aspx" />
+    <Content Include="Administrator\WebSitePlatform\Tag\Default.aspx" />
+    <Content Include="Administrator\WebSitePlatform\Tag\Modify.aspx" />
+    <Content Include="Administrator\WebSitePlatform\Template\Add.aspx" />
+    <Content Include="Administrator\WebSitePlatform\Template\Default.aspx" />
+    <Content Include="Administrator\WebSitePlatform\Template\Modify.aspx" />
+    <Content Include="Administrator\WebSitePlatform\WebSite\Add.aspx" />
+    <Content Include="Administrator\WebSitePlatform\WebSite\CreateHtml.aspx" />
+    <Content Include="Administrator\WebSitePlatform\WebSite\Default.aspx" />
+    <Content Include="Administrator\WebSitePlatform\WebSite\Delete.aspx" />
+    <Content Include="Administrator\WebSitePlatform\WebSite\Modify.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Index.aspx" />
+    <Content Include="News\css\style.css" />
+    <Content Include="News\images\about_us_img.png" />
+    <Content Include="News\images\abuot_list.jpg" />
+    <Content Include="News\images\abuot_list.png" />
+    <Content Include="News\images\banner1.jpg" />
+    <Content Include="News\images\bj1.jpg" />
+    <Content Include="News\images\bj10.png" />
+    <Content Include="News\images\bj11.jpg" />
+    <Content Include="News\images\bj11.png" />
+    <Content Include="News\images\bj12.jpg" />
+    <Content Include="News\images\bj12.png" />
+    <Content Include="News\images\bj13.png" />
+    <Content Include="News\images\bj14.jpg" />
+    <Content Include="News\images\bj15.jpg" />
+    <Content Include="News\images\bj16.jpg" />
+    <Content Include="News\images\bj17.jpg" />
+    <Content Include="News\images\bj18.jpg" />
+    <Content Include="News\images\bj19.jpg" />
+    <Content Include="News\images\bj19.png" />
+    <Content Include="News\images\bj2.jpg" />
+    <Content Include="News\images\bj25.jpg" />
+    <Content Include="News\images\bj26.jpg" />
+    <Content Include="News\images\bj27.jpg" />
+    <Content Include="News\images\bj3.jpg" />
+    <Content Include="News\images\bj4.jpg" />
+    <Content Include="News\images\bj4.png" />
+    <Content Include="News\images\bj5.jpg" />
+    <Content Include="News\images\bj5.png" />
+    <Content Include="News\images\bj6.png" />
+    <Content Include="News\images\bj7.png" />
+    <Content Include="News\images\bj8.png" />
+    <Content Include="News\images\bj9.png" />
+    <Content Include="News\images\bj_layer.jpg" />
+    <Content Include="News\images\bj_s.png" />
+    <Content Include="News\images\btn1.png" />
+    <Content Include="News\images\btn4.png" />
+    <Content Include="News\images\btn5.png" />
+    <Content Include="News\images\btn6.png" />
+    <Content Include="News\images\certif_bj.png" />
+    <Content Include="News\images\certif_img.png" />
+    <Content Include="News\images\ewm.png" />
+    <Content Include="News\images\icon.png" />
+    <Content Include="News\images\icon02.png" />
+    <Content Include="News\images\icon1.png" />
+    <Content Include="News\images\img1.png" />
+    <Content Include="News\images\img10.png" />
+    <Content Include="News\images\img11.png" />
+    <Content Include="News\images\img12.png" />
+    <Content Include="News\images\img13.png" />
+    <Content Include="News\images\img14.png" />
+    <Content Include="News\images\img15.png" />
+    <Content Include="News\images\img16.png" />
+    <Content Include="News\images\img17.png" />
+    <Content Include="News\images\img18.png" />
+    <Content Include="News\images\img19.png" />
+    <Content Include="News\images\img2.png" />
+    <Content Include="News\images\img20.png" />
+    <Content Include="News\images\img21.png" />
+    <Content Include="News\images\img22.png" />
+    <Content Include="News\images\img23.jpg" />
+    <Content Include="News\images\img24.jpg" />
+    <Content Include="News\images\img24.png" />
+    <Content Include="News\images\img25.png" />
+    <Content Include="News\images\img26.png" />
+    <Content Include="News\images\img27.png" />
+    <Content Include="News\images\img27_1.png" />
+    <Content Include="News\images\img28.png" />
+    <Content Include="News\images\img3.png" />
+    <Content Include="News\images\img30.png" />
+    <Content Include="News\images\img31.png" />
+    <Content Include="News\images\img32.png" />
+    <Content Include="News\images\img33.png" />
+    <Content Include="News\images\img34.png" />
+    <Content Include="News\images\img35.png" />
+    <Content Include="News\images\img36.png" />
+    <Content Include="News\images\img37.png" />
+    <Content Include="News\images\img4.png" />
+    <Content Include="News\images\img5.png" />
+    <Content Include="News\images\img6.png" />
+    <Content Include="News\images\img7.png" />
+    <Content Include="News\images\img8.png" />
+    <Content Include="News\images\img9.png" />
+    <Content Include="News\images\jpkc_1.png" />
+    <Content Include="News\images\jpkc_2.png" />
+    <Content Include="News\images\jpkc_3.png" />
+    <Content Include="News\images\jpkc_4.png" />
+    <Content Include="News\images\layer_link.png" />
+    <Content Include="News\images\link1.png" />
+    <Content Include="News\images\link10.png" />
+    <Content Include="News\images\link11.png" />
+    <Content Include="News\images\link12.png" />
+    <Content Include="News\images\link2.png" />
+    <Content Include="News\images\link3.png" />
+    <Content Include="News\images\link4.png" />
+    <Content Include="News\images\link5.png" />
+    <Content Include="News\images\link6.png" />
+    <Content Include="News\images\link7.png" />
+    <Content Include="News\images\link8.png" />
+    <Content Include="News\images\link9.png" />
+    <Content Include="News\images\list_bj.png" />
+    <Content Include="News\images\list_bj01.png" />
+    <Content Include="News\images\list_bj02.png" />
+    <Content Include="News\images\list_bj_top.png" />
+    <Content Include="News\images\logo.png" />
+    <Content Include="News\images\logo_bj.png" />
+    <Content Include="News\images\mentorbj.png" />
+    <Content Include="News\images\menu_line.png" />
+    <Content Include="News\images\nav_bj1.png" />
+    <Content Include="News\images\nav_bj3.png" />
+    <Content Include="News\images\pic1.png" />
+    <Content Include="News\images\pic2.png" />
+    <Content Include="News\images\sp.png" />
+    <Content Include="News\images\s_bj1.png" />
+    <Content Include="News\images\tit01.png" />
+    <Content Include="News\images\tit02.png" />
+    <Content Include="News\images\title1.png" />
+    <Content Include="News\images\title10.png" />
+    <Content Include="News\images\title11.png" />
+    <Content Include="News\images\title12.png" />
+    <Content Include="News\images\title13.png" />
+    <Content Include="News\images\title14.png" />
+    <Content Include="News\images\title2.png" />
+    <Content Include="News\images\title3.png" />
+    <Content Include="News\images\title4.png" />
+    <Content Include="News\images\title5.png" />
+    <Content Include="News\images\title6.png" />
+    <Content Include="News\images\title7.png" />
+    <Content Include="News\images\title8.png" />
+    <Content Include="News\images\title9.png" />
+    <Content Include="News\images\top.png" />
+    <Content Include="News\images\vedio.png" />
+    <Content Include="News\images\未标题-1.png" />
+    <Content Include="News\js\header.js" />
+    <Content Include="News\js\lib\jquery.min.js" />
+    <Content Include="News\js\lib\template.js" />
+    <Content Include="News\js\preview.js" />
+    <Content Include="News\js\pub.js" />
+    <Content Include="News\js\pub2.js" />
+    <Content Include="News\js\qbPager.js" />
+    <Content Include="Template\201745124639529.html" />
+    <Content Include="Template\20174820398189.html" />
+    <Content Include="Template\201748212754601.html" />
+    <Content Include="Template\20174822248691.html" />
+    <Content Include="Template\201748234021987.html" />
+    <Content Include="Template\2017482383257.html" />
+    <Content Include="Template\20174884651406.html" />
+    <Content Include="Template\20174892551162.html" />
+    <Content Include="Template\20174901434175.html" />
+    <Content Include="Template\20174901526168.html" />
+    <Content Include="Template\201749124249705.html" />
+    <Content Include="Template\MasterPage1.html" />
+    <Content Include="Template\MasterPage.html" />
+    <Content Include="Template\News.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebSite\css\style.css" />
+    <Content Include="WebSite\css\style1.css" />
+    <Content Include="WebSite\images\about_us_img.png" />
+    <Content Include="WebSite\images\abuot_list.jpg" />
+    <Content Include="WebSite\images\abuot_list.png" />
+    <Content Include="WebSite\images\banner1.jpg" />
+    <Content Include="WebSite\images\bj1.jpg" />
+    <Content Include="WebSite\images\bj10.png" />
+    <Content Include="WebSite\images\bj11.jpg" />
+    <Content Include="WebSite\images\bj11.png" />
+    <Content Include="WebSite\images\bj12.jpg" />
+    <Content Include="WebSite\images\bj12.png" />
+    <Content Include="WebSite\images\bj13.png" />
+    <Content Include="WebSite\images\bj14.jpg" />
+    <Content Include="WebSite\images\bj15.jpg" />
+    <Content Include="WebSite\images\bj16.jpg" />
+    <Content Include="WebSite\images\bj17.jpg" />
+    <Content Include="WebSite\images\bj18.jpg" />
+    <Content Include="WebSite\images\bj19.jpg" />
+    <Content Include="WebSite\images\bj19.png" />
+    <Content Include="WebSite\images\bj2.jpg" />
+    <Content Include="WebSite\images\bj25.jpg" />
+    <Content Include="WebSite\images\bj26.jpg" />
+    <Content Include="WebSite\images\bj27.jpg" />
+    <Content Include="WebSite\images\bj3.jpg" />
+    <Content Include="WebSite\images\bj4.jpg" />
+    <Content Include="WebSite\images\bj4.png" />
+    <Content Include="WebSite\images\bj5.jpg" />
+    <Content Include="WebSite\images\bj5.png" />
+    <Content Include="WebSite\images\bj6.png" />
+    <Content Include="WebSite\images\bj7.png" />
+    <Content Include="WebSite\images\bj8.png" />
+    <Content Include="WebSite\images\bj9.png" />
+    <Content Include="WebSite\images\bj_layer.jpg" />
+    <Content Include="WebSite\images\bj_s.png" />
+    <Content Include="WebSite\images\btn1.png" />
+    <Content Include="WebSite\images\btn4.png" />
+    <Content Include="WebSite\images\btn5.png" />
+    <Content Include="WebSite\images\btn6.png" />
+    <Content Include="WebSite\images\certif_bj.png" />
+    <Content Include="WebSite\images\certif_img.png" />
+    <Content Include="WebSite\images\ewm.png" />
+    <Content Include="WebSite\images\icon.png" />
+    <Content Include="WebSite\images\icon02.png" />
+    <Content Include="WebSite\images\icon1.png" />
+    <Content Include="WebSite\images\img1.png" />
+    <Content Include="WebSite\images\img10.png" />
+    <Content Include="WebSite\images\img11.png" />
+    <Content Include="WebSite\images\img12.png" />
+    <Content Include="WebSite\images\img13.png" />
+    <Content Include="WebSite\images\img14.png" />
+    <Content Include="WebSite\images\img15.png" />
+    <Content Include="WebSite\images\img16.png" />
+    <Content Include="WebSite\images\img17.png" />
+    <Content Include="WebSite\images\img18.png" />
+    <Content Include="WebSite\images\img19.png" />
+    <Content Include="WebSite\images\img2.png" />
+    <Content Include="WebSite\images\img20.png" />
+    <Content Include="WebSite\images\img21.png" />
+    <Content Include="WebSite\images\img22.png" />
+    <Content Include="WebSite\images\img23.jpg" />
+    <Content Include="WebSite\images\img24.jpg" />
+    <Content Include="WebSite\images\img24.png" />
+    <Content Include="WebSite\images\img25.png" />
+    <Content Include="WebSite\images\img26.png" />
+    <Content Include="WebSite\images\img27.png" />
+    <Content Include="WebSite\images\img27_1.png" />
+    <Content Include="WebSite\images\img28.png" />
+    <Content Include="WebSite\images\img3.png" />
+    <Content Include="WebSite\images\img30.png" />
+    <Content Include="WebSite\images\img31.png" />
+    <Content Include="WebSite\images\img32.png" />
+    <Content Include="WebSite\images\img33.png" />
+    <Content Include="WebSite\images\img34.png" />
+    <Content Include="WebSite\images\img35.png" />
+    <Content Include="WebSite\images\img36.png" />
+    <Content Include="WebSite\images\img37.png" />
+    <Content Include="WebSite\images\img4.png" />
+    <Content Include="WebSite\images\img5.png" />
+    <Content Include="WebSite\images\img6.png" />
+    <Content Include="WebSite\images\img7.png" />
+    <Content Include="WebSite\images\img8.png" />
+    <Content Include="WebSite\images\img9.png" />
+    <Content Include="WebSite\images\jpkc_1.png" />
+    <Content Include="WebSite\images\jpkc_2.png" />
+    <Content Include="WebSite\images\jpkc_3.png" />
+    <Content Include="WebSite\images\jpkc_4.png" />
+    <Content Include="WebSite\images\layer_link.png" />
+    <Content Include="WebSite\images\link1.png" />
+    <Content Include="WebSite\images\link10.png" />
+    <Content Include="WebSite\images\link11.png" />
+    <Content Include="WebSite\images\link12.png" />
+    <Content Include="WebSite\images\link2.png" />
+    <Content Include="WebSite\images\link3.png" />
+    <Content Include="WebSite\images\link4.png" />
+    <Content Include="WebSite\images\link5.png" />
+    <Content Include="WebSite\images\link6.png" />
+    <Content Include="WebSite\images\link7.png" />
+    <Content Include="WebSite\images\link8.png" />
+    <Content Include="WebSite\images\link9.png" />
+    <Content Include="WebSite\images\list_bj.png" />
+    <Content Include="WebSite\images\list_bj01.png" />
+    <Content Include="WebSite\images\list_bj02.png" />
+    <Content Include="WebSite\images\list_bj_top.png" />
+    <Content Include="WebSite\images\logo.png" />
+    <Content Include="WebSite\images\logo_bj.png" />
+    <Content Include="WebSite\images\mentorbj.png" />
+    <Content Include="WebSite\images\menu_line.png" />
+    <Content Include="WebSite\images\nav_bj1.png" />
+    <Content Include="WebSite\images\nav_bj3.png" />
+    <Content Include="WebSite\images\pic1.png" />
+    <Content Include="WebSite\images\pic2.png" />
+    <Content Include="WebSite\images\sp.png" />
+    <Content Include="WebSite\images\s_bj1.png" />
+    <Content Include="WebSite\images\tit01.png" />
+    <Content Include="WebSite\images\tit02.png" />
+    <Content Include="WebSite\images\title1.png" />
+    <Content Include="WebSite\images\title10.png" />
+    <Content Include="WebSite\images\title11.png" />
+    <Content Include="WebSite\images\title12.png" />
+    <Content Include="WebSite\images\title13.png" />
+    <Content Include="WebSite\images\title14.png" />
+    <Content Include="WebSite\images\title2.png" />
+    <Content Include="WebSite\images\title3.png" />
+    <Content Include="WebSite\images\title4.png" />
+    <Content Include="WebSite\images\title5.png" />
+    <Content Include="WebSite\images\title6.png" />
+    <Content Include="WebSite\images\title7.png" />
+    <Content Include="WebSite\images\title8.png" />
+    <Content Include="WebSite\images\title9.png" />
+    <Content Include="WebSite\images\top.png" />
+    <Content Include="WebSite\images\vedio.png" />
+    <Content Include="WebSite\images\未标题-1.png" />
+    <Content Include="WebSite\js\lib\jquery.min.js" />
+    <Content Include="WebSite\js\aboutUs.js" />
+    <Content Include="WebSite\js\pub1.js" />
+    <Content Include="WebSite\js\pub2.js" />
+    <Content Include="WebSite\js\lib\template.js" />
+    <Content Include="WebSite\js\preview.js" />
+    <Content Include="WebSite\js\pub.js" />
+    <Content Include="WebSite\js\qbPager.js" />
+    <Content Include="WebSite\News.html" />
+    <Content Include="WebSite\photoVedio.html" />
+    <Content Include="WebSite\SignUp.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrator\BasePage.aspx.cs">
+      <DependentUpon>BasePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePage.aspx.designer.cs">
+      <DependentUpon>BasePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Account\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Account\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Account\ChangeUserInfo.aspx.cs">
+      <DependentUpon>ChangeUserInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Account\ChangeUserInfo.aspx.designer.cs">
+      <DependentUpon>ChangeUserInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Account\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Account\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Account\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Account\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Account\UpdatePassword.aspx.cs">
+      <DependentUpon>UpdatePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Account\UpdatePassword.aspx.designer.cs">
+      <DependentUpon>UpdatePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Dept\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Dept\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Dept\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Dept\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Dept\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Dept\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Dept\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Dept\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Desk\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Desk\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Desk\Config.aspx.cs">
+      <DependentUpon>Config.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Desk\Config.aspx.designer.cs">
+      <DependentUpon>Config.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Desk\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Desk\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Desk\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Desk\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Dictionary\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Dictionary\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Dictionary\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Dictionary\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Dictionary\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Dictionary\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Dictionary\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Dictionary\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Duty\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Duty\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Duty\Config.aspx.cs">
+      <DependentUpon>Config.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Duty\Config.aspx.designer.cs">
+      <DependentUpon>Config.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Duty\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Duty\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Duty\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Duty\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Main\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Main\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Main\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Main\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Main\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Main\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Main\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Main\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Notice\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Notice\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Notice\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Notice\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Notice\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Notice\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Notice\SearchList.aspx.cs">
+      <DependentUpon>SearchList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Notice\SearchList.aspx.designer.cs">
+      <DependentUpon>SearchList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Notice\Show.aspx.cs">
+      <DependentUpon>Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Notice\Show.aspx.designer.cs">
+      <DependentUpon>Show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Role\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Role\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Role\Config.aspx.cs">
+      <DependentUpon>Config.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Role\Config.aspx.designer.cs">
+      <DependentUpon>Config.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Role\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Role\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Role\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\BasePlatform\Role\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\About\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\About\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\About\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\About\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\About\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\About\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\Code\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\Code\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\Code\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\Code\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\Code\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\Code\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\Link\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\Link\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\Link\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\Link\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\Link\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\Link\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\NewsChannel\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\NewsChannel\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\NewsChannel\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\NewsChannel\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\NewsChannel\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\NewsChannel\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\NewsChannel\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\NewsChannel\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\News\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\News\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\News\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\News\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\News\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\CMSPlatform\News\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Brand\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Brand\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Brand\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Brand\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Brand\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Brand\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Class\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Class\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Class\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Class\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Class\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Class\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\School\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\School\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\School\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\School\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\School\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\School\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Signup\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Signup\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Signup\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Signup\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Signup\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Signup\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Student\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Student\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Student\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Student\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Student\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Student\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Teacher\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Teacher\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Teacher\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Teacher\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Teacher\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\SchoolPlatform\Teacher\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Tools\BrockChoose.aspx.cs">
+      <DependentUpon>BrockChoose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Tools\BrockChoose.aspx.designer.cs">
+      <DependentUpon>BrockChoose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Tools\ChooseChannel.aspx.cs">
+      <DependentUpon>ChooseChannel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Tools\ChooseChannel.aspx.designer.cs">
+      <DependentUpon>ChooseChannel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Tools\ConfigTable.aspx.cs">
+      <DependentUpon>ConfigTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Tools\ConfigTable.aspx.designer.cs">
+      <DependentUpon>ConfigTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Tools\DeptChoose.aspx.cs">
+      <DependentUpon>DeptChoose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Tools\DeptChoose.aspx.designer.cs">
+      <DependentUpon>DeptChoose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Tools\DictionaryChoose.aspx.cs">
+      <DependentUpon>DictionaryChoose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Tools\DictionaryChoose.aspx.designer.cs">
+      <DependentUpon>DictionaryChoose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Tools\IconChoose.aspx.cs">
+      <DependentUpon>IconChoose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Tools\IconChoose.aspx.designer.cs">
+      <DependentUpon>IconChoose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Tools\Loading.aspx.cs">
+      <DependentUpon>Loading.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Tools\Loading.aspx.designer.cs">
+      <DependentUpon>Loading.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Tools\MainChoose.aspx.cs">
+      <DependentUpon>MainChoose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Tools\MainChoose.aspx.designer.cs">
+      <DependentUpon>MainChoose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Tools\NewsChannelChoose.aspx.cs">
+      <DependentUpon>NewsChannelChoose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Tools\NewsChannelChoose.aspx.designer.cs">
+      <DependentUpon>NewsChannelChoose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Tools\TemplateChoose.aspx.cs">
+      <DependentUpon>TemplateChoose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Tools\TemplateChoose.aspx.designer.cs">
+      <DependentUpon>TemplateChoose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Tools\WebSiteChoose.aspx.cs">
+      <DependentUpon>WebSiteChoose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Tools\WebSiteChoose.aspx.designer.cs">
+      <DependentUpon>WebSiteChoose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\UserDesk\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\UserDesk\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\UserDesk\Notice.aspx.cs">
+      <DependentUpon>Notice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\UserDesk\Notice.aspx.designer.cs">
+      <DependentUpon>Notice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\UserDesk\Welcome.aspx.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\UserDesk\Welcome.aspx.designer.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Brock\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Brock\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Brock\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Brock\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Brock\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Brock\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Property\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Property\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Property\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Property\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Property\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Property\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Tag\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Tag\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Tag\Config.aspx.cs">
+      <DependentUpon>Config.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Tag\Config.aspx.designer.cs">
+      <DependentUpon>Config.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Tag\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Tag\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Tag\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Tag\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Template\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Template\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Template\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Template\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Template\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\Template\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\WebSite\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\WebSite\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\WebSite\CreateHtml.aspx.cs">
+      <DependentUpon>CreateHtml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\WebSite\CreateHtml.aspx.designer.cs">
+      <DependentUpon>CreateHtml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\WebSite\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\WebSite\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\WebSite\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\WebSite\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\WebSite\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\WebSitePlatform\WebSite\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\ajax.ashx.cs">
+      <DependentUpon>ajax.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Content Include="App_Code\TagReplace.cs" />
+    <Content Include="App_Code\CreateHtml.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Administrator\Res\Images\login\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="extjs\" />
+    <Folder Include="News\layout\" />
+    <Folder Include="res\" />
+    <Folder Include="Template\css\" />
+    <Folder Include="Template\images\" />
+    <Folder Include="Template\js\" />
+    <Folder Include="Template\layout\" />
+    <Folder Include="Uploads\Brand\" />
+    <Folder Include="Uploads\Class\" />
+    <Folder Include="Uploads\ECode\" />
+    <Folder Include="Uploads\Link\" />
+    <Folder Include="Uploads\News\" />
+    <Folder Include="Uploads\Others\High\" />
+    <Folder Include="Uploads\Others\Low\" />
+    <Folder Include="Uploads\School\" />
+    <Folder Include="Uploads\Student\" />
+    <Folder Include="Uploads\Teacher\" />
+    <Folder Include="Uploads\video\" />
+    <Folder Include="WebSite\layout\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="WebSite\ajax.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\E-BLL\E-BLL.csproj">
+      <Project>{79da4f22-a870-4328-be80-c614cae0d315}</Project>
+      <Name>E-BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\E-Common\E-Common.csproj">
+      <Project>{c9bd05e1-8da0-4c4b-b61c-6cebee18caf1}</Project>
+      <Name>E-Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\E-DAL\OracleDAL.csproj">
+      <Project>{649ad2a7-a194-4a15-8e60-e4ca2ce98068}</Project>
+      <Name>OracleDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\E-HtmlTemplate\E-HtmlTemplate.csproj">
+      <Project>{fbe1d8cc-f104-4b1d-959b-927cb55bb03a}</Project>
+      <Name>E-HtmlTemplate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\E-Model\E-Model.csproj">
+      <Project>{87c54adf-e15b-444f-8499-09adc4a4bd35}</Project>
+      <Name>E-Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SqlServerDAL\SqlServerDAL.csproj">
+      <Project>{9f0cf840-ecc1-4c2c-a600-446ec69c10cc}</Project>
+      <Name>SqlServerDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56172</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56172/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

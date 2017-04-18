@@ -1,0 +1,254 @@
+﻿
+        #header {
+            position: relative;
+            padding: 10px 10px 8px;
+        }
+
+            #header a.logo {
+                display: inline-block;
+                margin-right: 5px;
+            }
+
+            #header a.title {
+                font-weight: bold;
+                font-size: 24px;
+                text-decoration: none;
+                line-height: 36px;
+                color: #fff;
+            }
+
+
+            #header .themeroller {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+
+                #header .themeroller a {
+                    font-size: 20px;
+                    text-decoration: none;
+                    line-height: 36px;
+                    color: #fff;
+                }
+
+
+        #logo {
+            position: absolute;
+            bottom: 20px;
+            right: 0;
+            filter: alpha(opacity=80);
+            -moz-opacity: 0.8;
+            opacity: 0.8;
+            z-indef: 100000;
+        }
+
+        .isnew {
+            color: red;
+        }
+
+        .bottomtable {
+            width: 100%;
+            font-size: 12px;
+        }
+
+        /* 修正选项卡标题中放置红色[New!]时，底部出现的一行空白线 */
+        .f-theme-neptune .x-tab .x-tab-inner {
+            line-height: 16px !important;
+        }
+
+
+        /* 主题相关样式 - neptune */
+        .f-theme-neptune #header,
+        .f-theme-neptune .bottomtable,
+        .f-theme-neptune .x-splitter {
+            background-color: #1475BB;
+            color: #fff;
+        }
+
+            .f-theme-neptune #header a,
+            .f-theme-neptune .bottomtable a {
+                color: #fff;
+            }
+
+
+        /* 主题相关样式 - blue */
+        .f-theme-blue #header,
+        .f-theme-blue .bottomtable {
+            background-color: #DFE8F6;
+            color: #000;
+        }
+
+            .f-theme-blue #header a,
+            .f-theme-blue .bottomtable a {
+                color: #000;
+            }
+
+        /* 主题相关样式 - gray */
+        .f-theme-gray #header,
+        .f-theme-gray .bottomtable {
+            background-color: #E0E0E0;
+            color: #333;
+        }
+
+            .f-theme-gray #header a,
+            .f-theme-gray .bottomtable a {
+                color: #333;
+            }
+
+        /* 主题相关样式 - access */
+        .f-theme-access #header,
+        .f-theme-access .bottomtable {
+            background-color: #3F4757;
+            color: #fff;
+        }
+
+            .f-theme-access #header a,
+            .f-theme-access .bottomtable a {
+                color: #fff;
+            }
+
+        .f-theme-access .maincontent .x-panel-body {
+            background-image: none;
+        }
+ 
+ 
+        
+ 
+        #header .icontopaction .f-btn-icon {
+            width: 70px;
+            font-size: 24px;
+            top:50%;
+            line-height: 70px;
+            height: 70px;
+            border:none;
+            border-width: 0;
+        }
+ 
+        #header .icontopaction .f-btn-text {
+            font-size: 12px;
+            line-height: 16px;
+            padding-top: 24px;
+            border-width: 0;
+        }
+ 
+ 
+        #header .icononlyaction .f-btn-icon,
+        #header .icononlyaction .f-btn-text {
+            width: 50px;
+            font-size: 24px;
+            line-height: 55px;
+            height: 70px;
+            border-width: 0;
+        }
+ 
+ 
+ 
+        #header .userpicaction .f-btn-icon {
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            top: 50%;
+            margin-top: -18px;
+        }
+ 
+      #header .userpicaction .f-btn-text {
+            margin-left: 45px;
+            font-size: 14px;
+            line-height: 40px;
+        }
+
+      .bgbtn_Chart {
+          padding:5px;
+            background-image: url(../../res/Images/CHART.png) !important;
+            background-repeat:no-repeat;
+            width: 50px;
+            height: 50px;
+            border-width: 0;
+            background-color: transparent;
+        }
+    .bgbtn_Help {
+            background-image: url(../../res/Images/HELP.png) !important;
+            background-repeat:no-repeat;
+            width: 50px;
+            height: 50px;
+            border-width: 0;
+            background-color: transparent;
+        }
+    .bgbtn_Theme {
+            background-image: url(../../res/Images/THEME.png) !important;
+            background-repeat:no-repeat;
+            width: 50px;
+            height: 50px;
+            border-width: 0;
+            background-color: transparent;
+        }
+
+    .bgbtn_User {
+            background-image: url(../../res/Images/USER.png) !important;
+            background-repeat:no-repeat;
+            width: 50px;
+            height: 50px;
+            border-width: 0;
+            background-color: transparent;
+            text-align:center;
+        }
+        .bgbtn .x-frame-ml, .bgbtn .x-frame-mc, .bgbtn .x-frame-mr,
+        .bgbtn .x-frame-tl, .bgbtn .x-frame-tc, .bgbtn .x-frame-tr,
+        .bgbtn .x-frame-bl, .bgbtn .x-frame-bc, .bgbtn .x-frame-br {
+            background-image: none;
+            background-color: transparent;
+        }
+
+        .marginr {
+    margin-right: 5px;
+}
+
+.formitem {
+    margin-bottom: 6px;
+}
+
+.clear {
+    clear: both;
+}
+
+ol.result {
+    list-style-type: decimal;
+    margin: 10px 0 10px 25px;
+}
+
+table.result {
+    margin: 10px 0;
+    width: 500px;
+}
+
+    table.result th {
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    table.result td, table.result th {
+        border-bottom: solid 1px #efefef;
+        padding: 5px;
+        text-align: left;
+    }
+
+.treeCursor {
+    cursor:pointer;
+}
+
+a:link{
+text-decoration:none;
+}
+a:visited{
+text-decoration:none;
+}
+a:hover{
+text-decoration:none;
+}
+a:active{
+text-decoration:none;
+}
+
+.linkBotton {
+text-decoration:none;
+}

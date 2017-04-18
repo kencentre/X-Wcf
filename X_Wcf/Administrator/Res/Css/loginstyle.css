@@ -1,0 +1,46 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body{ margin:0; padding:0; font-size:14px;}
+ul,li,p,span,input,em,i{ margin:0; padding:0; list-style:none}
+em,i{ font-style:normal}
+img{ border:0}
+
+
+.bj{ background:#0b5eaa}
+.middle_box{ height:182px; background:url(../images/bj01.png) repeat-x center;  position:absolute; top:50%; margin-top:-91px; width:100%}
+.logo{  width:380px; height:77px; margin-top:50px; font-size:32px; color:#fff; line-height:77px; padding-left:230px; font-family:"微软雅黑"}
+.wrap_box{ margin:0 auto; width:1200px ;}
+.main_box{ width:866px; height:800px; background:url(../images/bj03.png) no-repeat right top; position:absolute; left:50%; margin-left:-236px; z-index:10}
+
+.login_box{ background:url(../images/bj02.png) no-repeat center ; width:450px; height:380px; margin:297px 0 0 277px}
+.login_box h3{ font-size:30px; color:#4a88c0;  font-family:"微软雅黑"; font-weight:normal; padding:12px 0 0 20px}
+.login_box p{ clear:both; padding-top:15px;}
+.login_box form{ width:300px; margin:0 auto}
+.login_box p label{ display:block; float:left; color:#075398; width:70px; text-align:right; line-height:25px;}
+.login_box p span{ float:left; background:url(../images/bj05.png) no-repeat center left;width:199px; height:27px;}
+.login_box p input.text{ width:191px; height:25px; line-height:25px; background:none; border:none; padding:0 3px }
+.login_box p input.error{ border:1px solid #cc0000; background:#fef3f1; color:#ff0000}
+.login_box p span.btn_bj input{ width:62px; height:40px; border:0; margin-right:25px; margin-top:10px}
+.login_box p input.btn{ background:url(../images/btn01.png) no-repeat center;cursor:pointer}
+.login_box p input.btn01{background:url(../images/btn02.png) no-repeat center;cursor:pointer}
+.login_box p span.btn_bj{ background:none}
+
+.info{ text-align:center; color:#35c1fa; position:absolute; bottom:30px; left:50%; margin-left:-270px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
